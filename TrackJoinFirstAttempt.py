@@ -9,7 +9,12 @@ TableT = {}
 TableOut = open('TableOut.csv', 'w', newline='')
 
 for person in TableR["Name"]:
-    TableT[person] = TableR[TableR["Name"] == person]
+    if person  not in TableT:
+        TableT[person] = [TableR[TableR["Name"] == person].values[0][0]]
+    else:
+        TableT[person] = TableT[person].append( TableR[TableR["Name"] == person].values[0][0] )
+
+
 
 
 

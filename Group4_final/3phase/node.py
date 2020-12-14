@@ -394,7 +394,7 @@ class Node(Process):
             if isinstance(phaseID, bool):
                 self.queue.put(phaseID)
                 continue
-            print(self.nodeID,'got message', phaseID)
+            if self.nodeID == 0: print(self.nodeID,'got message', phaseID)
 
             if phaseID == 1:
                 if self.nodeID == 0: print('    Starting Process T')

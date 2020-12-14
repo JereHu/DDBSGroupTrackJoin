@@ -1,0 +1,12 @@
+variable,value
+message_sent_out_1,1746
+message_sent_in_1,351
+total_cost_RS,652288
+total_cost_SR,332800
+optimized_cost,332544
+message_sent_out_2,2118
+message_sent_in_2,426
+payloads_IN_R,3
+payloads_OUT_R,17
+payloads_IN_S,413
+payloads_OUT_S,2111
